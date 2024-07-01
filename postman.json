@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "ad34b83f-bd19-4d11-97f6-a14087a88750",
+		"name": "Hishana Productions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36246021",
+		"_collection_link": "https://mero-vision.postman.co/workspace/Team-Workspace~1395415a-98af-4bc5-853c-6265c2c2d0cd/collection/36246021-ad34b83f-bd19-4d11-97f6-a14087a88750?action=share&source=collection_link&creator=36246021"
+	},
+	"item": [
+		{
+			"name": "Site Settings",
+			"item": [
+				{
+					"name": "get all site setting list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/site-settings",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"site-settings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Hishana Productions
+  description: Hishana Productions API documentation
+  version: '1.0'
+  x-logo:
+    url: https://github.com/joolfe/logoBanner.png
+    backgroundColor: '#FFFFFF'
+    altText: logo
+  termsOfService: '#'
+  contact:
+    name: Scodus
+    url: https://merovision.com
+    email: merovision720@gmail.com
+  license:
+    name: MIT
+    url: https://es.wikipedia.org/wiki/Licencia_MIT
+servers:
+  - url: https://adminportal.hishana.com
+    description: server
+tags:
+  - name: Site Settings
+paths:
+  /api/site-settings:
+    get:
+      tags:
+        - Site Settings
+      summary: get all site setting list
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
