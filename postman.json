@@ -52,6 +52,65 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Contact Us",
+			"item": [
+				{
+					"name": "contact us",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mobile_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/contact-us",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"contact-us"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
