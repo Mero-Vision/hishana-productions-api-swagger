@@ -29,6 +29,29 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Blogs",
+			"item": [
+				{
+					"name": "get blogs list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blogs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
