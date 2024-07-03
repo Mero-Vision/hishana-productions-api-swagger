@@ -72,27 +72,27 @@
 							"formdata": [
 								{
 									"key": "name",
-									"value": "",
+									"value": "Hancie Phago",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "",
+									"value": "hanciewanemphago@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "mobile_no",
-									"value": "",
+									"value": "9825915122",
 									"type": "text"
 								},
 								{
 									"key": "subject",
-									"value": "",
+									"value": "Compliment",
 									"type": "text"
 								},
 								{
 									"key": "message",
-									"value": "",
+									"value": "hy",
 									"type": "text"
 								}
 							]
@@ -105,6 +105,35 @@
 							"path": [
 								"api",
 								"contact-us"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Influencer Category",
+			"item": [
+				{
+					"name": "get all category list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/influencer-categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"influencer-categories"
 							]
 						}
 					},

@@ -22,6 +22,7 @@ tags:
   - name: Site Settings
   - name: Blogs
   - name: Contact Us
+  - name: Influencer Category
 paths:
   /api/site-settings:
     get:
@@ -56,14 +57,35 @@ paths:
               properties:
                 name:
                   type: string
+                  example: Hancie Phago
                 email:
                   type: string
+                  example: hanciewanemphago@gmail.com
                 mobile_no:
-                  type: string
+                  type: integer
+                  example: '9825915122'
                 subject:
                   type: string
+                  example: Compliment
                 message:
                   type: string
+                  example: hy
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/influencer-categories:
+    get:
+      tags:
+        - Influencer Category
+      summary: get all category list
       parameters:
         - name: Accept
           in: header
