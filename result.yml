@@ -25,6 +25,7 @@ tags:
   - name: Influencer Category
   - name: Featured Influencers
   - name: Faq
+  - name: Gallery Images
 paths:
   /api/site-settings:
     get:
@@ -120,6 +121,38 @@ paths:
       tags:
         - Faq
       summary: show all faq list
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/gallery:
+    get:
+      tags:
+        - Gallery Images
+      summary: show all gallery images
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/gallery/1:
+    get:
+      tags:
+        - Gallery Images
+      summary: show single gallery image
       parameters:
         - name: Accept
           in: header

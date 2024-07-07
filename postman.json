@@ -198,6 +198,60 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Gallery Images",
+			"item": [
+				{
+					"name": "show all gallery images",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/gallery",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show single gallery image",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/gallery/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"gallery",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
