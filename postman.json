@@ -245,13 +245,23 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/gallery",
+							"raw": "{{url}}/api/gallery?pagination_limit=5&search_keyword=Ut explicabo Tempor",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"gallery"
+							],
+							"query": [
+								{
+									"key": "pagination_limit",
+									"value": "5"
+								},
+								{
+									"key": "search_keyword",
+									"value": "Ut explicabo Tempor"
+								}
 							]
 						}
 					},

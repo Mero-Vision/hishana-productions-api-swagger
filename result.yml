@@ -164,6 +164,16 @@ paths:
           schema:
             type: string
           example: application/json
+        - name: pagination_limit
+          in: query
+          schema:
+            type: integer
+          example: '5'
+        - name: search_keyword
+          in: query
+          schema:
+            type: string
+          example: Ut explicabo Tempor
       responses:
         '200':
           description: Successful response
