@@ -50,6 +50,37 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "show single blog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/blogs/:slug",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blogs",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -238,14 +269,20 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/gallery/1",
+							"raw": "{{url}}/api/gallery/:id",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"gallery",
-								"1"
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
 							]
 						}
 					},
