@@ -140,6 +140,64 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Featured Influencers",
+			"item": [
+				{
+					"name": "get all featured influencers list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/featured-influencers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"featured-influencers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Faq",
+			"item": [
+				{
+					"name": "show all faq list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/faq",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"faq"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

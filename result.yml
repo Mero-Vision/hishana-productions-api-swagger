@@ -23,6 +23,8 @@ tags:
   - name: Blogs
   - name: Contact Us
   - name: Influencer Category
+  - name: Featured Influencers
+  - name: Faq
 paths:
   /api/site-settings:
     get:
@@ -86,6 +88,38 @@ paths:
       tags:
         - Influencer Category
       summary: get all category list
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/featured-influencers:
+    get:
+      tags:
+        - Featured Influencers
+      summary: get all featured influencers list
+      parameters:
+        - name: Accept
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /api/faq:
+    get:
+      tags:
+        - Faq
+      summary: show all faq list
       parameters:
         - name: Accept
           in: header
